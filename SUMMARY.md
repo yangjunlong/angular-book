@@ -1,3 +1,0 @@
-# Summary
-
-* [AngularJS](README.md)
