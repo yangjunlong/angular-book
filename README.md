@@ -19,3 +19,42 @@ AngularJS试图去创建新的HTML标签来尝试补足HTML本身在构建应用
 * 支持表单和表单验证
 * 将新的行为附加到DOM元素，比如DOM事件处理
 * 将HTML分组成可重用的组件
+
+## 一个Hello world程序
+
+[示例](./example/helloworld.html)
+```html
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="./static/lib/angularjs/1.6.5/angular.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+  </body>
+</html>
+```
+
+引入AngularJS库文件
+```
+<script src="./static/lib/angularjs/1.6.5/angular.js"></script>
+```
+
+当页面加载时，标记ng-app用来告诉AngularJS处理整个HTML页并引导应用
+```
+<html ng-app>
+```
+
+指令`ng-model`将`<input>`输入的值绑定到了变量`yourname`。
+```
+<h1>Hello {{yourName}}!</h1>
+```
+
+* AngularJS表达式用双括号`\{\{ \}\}`形式表示，他会对包裹的yourname变量进行解析
+* 指令`ng-model`将`<input>`输入的值绑定到了变量`yourname`
+* {{yourname}}表达式将结果解析出来，这个过程是同步的，这就是AngularJS的双向数据绑定
