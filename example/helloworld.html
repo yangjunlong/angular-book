@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app>
+<html>
   <head>
     <script src="../static/lib/angularjs/1.6.5/angular.js"></script>
   </head>
@@ -11,4 +11,10 @@
       <h1>Hello {{yourName}}!</h1>
     </div>
   </body>
+
+  <script type="text/javascript">
+    angular.element(document).ready(function() {
+            angular.bootstrap(document, [function() {}]);
+    });
+  </script>
 </html>

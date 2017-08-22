@@ -39,6 +39,30 @@ AngularJS试图去创建新的HTML标签来尝试补足HTML本身在构建应用
   </body>
 </html>
 ```
+或 通过下面的方式手动初始化
+```html
+<!doctype html>
+<html>
+  <head>
+    <script src="../static/lib/angularjs/1.6.5/angular.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+  </body>
+  <script type="text/javascript">
+    angular.element(document).ready(function() {
+        angular.bootstrap(document, [function() {}]);
+    });
+  </script>
+</html>
+```
+
+<iframe src="./example/helloworld.html" style="width: 100%; height: 250px;"></iframe>
 
 引入AngularJS库文件
 ```
