@@ -65,6 +65,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="conceptual.html" />
+    
     
 
     </head>
@@ -101,6 +103,32 @@
             
                     
                     AngularJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="conceptual.html">
+            
+                <a href="conceptual.html">
+            
+                    
+                    概念大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="filter/date.html">
+            
+                <a href="filter/date.html">
+            
+                    
+                    日期格式化
             
                 </a>
             
@@ -191,6 +219,29 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
+<p>&#x6216; &#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x624B;&#x52A8;&#x521D;&#x59CB;&#x5316;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../static/lib/angularjs/1.6.5/angular.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Name:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">ng-model</span>=<span class="hljs-string">&quot;yourName&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Enter a name here&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello {{yourName}}!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+    angular.element(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        angular.bootstrap(<span class="hljs-built_in">document</span>, [<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{}]);
+    });
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<iframe src="./example/helloworld.html" style="width: 100%; height: 250px;"></iframe>
+
 <p>&#x5F15;&#x5165;AngularJS&#x5E93;&#x6587;&#x4EF6;</p>
 <pre><code>&lt;script src=&quot;./static/lib/angularjs/1.6.5/angular.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>&#x5F53;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x65F6;&#xFF0C;&#x6807;&#x8BB0;ng-app&#x7528;&#x6765;&#x544A;&#x8BC9;AngularJS&#x5904;&#x7406;&#x6574;&#x4E2A;HTML&#x9875;&#x5E76;&#x5F15;&#x5BFC;&#x5E94;&#x7528;</p>
@@ -203,7 +254,7 @@
 <li>&#x8868;&#x8FBE;&#x5F0F;&#x5C06;&#x7ED3;&#x679C;&#x89E3;&#x6790;&#x51FA;&#x6765;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;AngularJS&#x7684;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;</li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; sobird.me 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2017-07-14 10:10:17
+2017-07-14 10:37:52
 </span></footer>
                                 
                                 </section>
@@ -232,6 +283,10 @@
             
                 
                 
+                <a href="conceptual.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 概念大纲">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -239,7 +294,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AngularJS","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":["-sharing","splitter","tbfed-pagefooter","github","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy sobird.me 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/yangjunlong/angular-book/tree/master"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"edit-link":{"label":"编辑该页","base":"https://github.com/yangjunlong/angular-book/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sobird","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Angularjs 文档","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.2","description":"Angularjs 文档教程整理"},"file":{"path":"README.md","mtime":"2017-07-14T02:10:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-14T02:13:50.730Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AngularJS","level":"1.1","depth":1,"next":{"title":"概念大纲","level":"1.2","depth":1,"path":"conceptual.md","ref":"conceptual.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","tbfed-pagefooter","github","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy sobird.me 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/yangjunlong/angular-book/tree/master"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"edit-link":{"label":"编辑该页","base":"https://github.com/yangjunlong/angular-book/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sobird","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Angularjs 文档","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.2","description":"Angularjs 文档教程整理"},"file":{"path":"README.md","mtime":"2017-07-14T02:37:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-22T10:51:53.050Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
